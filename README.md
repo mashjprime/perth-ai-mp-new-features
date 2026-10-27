@@ -1,8 +1,8 @@
 # eShop: new features with Matt Pocock's skills
 
-The starting repo for Part 2 of the Perth AI workshop on Matt Pocock's skills for AI coding agents.
+This branch, `mash/part-2-new-features`, is the starting point for Part 2 of the Perth AI workshop on Matt Pocock's skills for AI coding agents. Part 1 runs from `main`.
 
-**Setup guide:** https://mashjprime.github.io/perth-ai-mp-new-features/ · [skills cheat sheet](https://mashjprime.github.io/perth-ai-mp-new-features/skills.html) · [slides](https://mashjprime.github.io/perth-ai-mp-new-features/slides.html)
+**Setup guide:** https://perth-ai.github.io/workshop-mp-skills-for-ai-native-devs/ · [skills cheat sheet](https://perth-ai.github.io/workshop-mp-skills-for-ai-native-devs/skills.html) · [slides](https://perth-ai.github.io/workshop-mp-skills-for-ai-native-devs/slides.html)
 
 ## The story
 
@@ -10,11 +10,16 @@ In Part 1 you were handed a buggy, vibe-coded online store and triaged it. Those
 
 ## Get your own copy
 
-1. Click **Use this template** → **Create a new repository** at the top of this page.
-2. Clone your new repo and open it in your coding agent.
-3. Run `/setup-matt-pocock-skills` in it. Choose GitHub issues if you're signed in to `gh`, or local files if not.
+1. Click **Use this template** → **Create a new repository** at the top of this page, and tick **Include all branches**.
+2. Clone your new repo and switch to Part 2. Already have a copy from Part 1? Run `git stash -u` and `git fetch` first.
 
-Use the template rather than a fork: your copy gets its own issues, and pull requests go to your own `main`.
+   ```bash
+   git switch mash/part-2-new-features
+   ```
+
+3. Run `/setup-matt-pocock-skills` in your coding agent. Choose GitHub issues if you're signed in to `gh`, or local files if not.
+
+Your copy has its own issues, and pull requests go into your own `mash/part-2-new-features`.
 
 ## Run the app
 
@@ -41,4 +46,4 @@ cd python-eshop/backend && uv run pytest
 
 ## Credits
 
-The app comes from [perth-ai/workshop-mp-skills-for-ai-native-devs](https://github.com/perth-ai/workshop-mp-skills-for-ai-native-devs), Part 1 of this workshop by Rafael Avigad and Raj Saddi. Released under CC0, like the original.
+The app comes from Part 1 of this workshop, on `main`, by Rafael Avigad and Raj Saddi. Released under CC0, like the original.

@@ -22,6 +22,7 @@
       <a href="part1.html">Part 1</a>
       <a href="part2.html" aria-current="page">Part 2</a>
       <a href="skills.html">Skills</a>
+      <a href="live/" data-live hidden>Live</a>
     </nav>
   </div>
 </header>
@@ -29,7 +30,7 @@
 <div class="band">
   <img class="skyline" src="brand/perth-skyline.webp" alt="" width="1600" height="578">
   <div class="wrap">
-    <p class="eyebrow">Part 2 · Mash leads</p>
+    <p class="eyebrow">Part 2</p>
     <h1>Build a new feature</h1>
     <p class="lede">The bugs are fixed. Now the client wants favourites: signed-in shoppers can save products and see them on one page. Here's the whole loop, one skill at a time.</p>
   </div>
@@ -38,13 +39,16 @@
 <main class="wrap">
   <p class="note">On Codex, type <code>$</code> instead of <code>/</code>, for example <code>$grill-with-docs</code>. In an agent without commands, ask for the skill by name.</p>
   <ol class="steps">
-    <li><div class="step"><h2>Get your own copy of the shop</h2>
-      <a class="cta" href="https://github.com/new?template_name=perth-ai-mp-new-features&amp;template_owner=mashjprime" target="_blank" rel="noopener">Create my copy on GitHub</a>
-      <p>Clone it, start your agent in the folder, then run the setup skill once.</p>
-      <div class="cmd"><pre>gh repo clone YOUR-NAME/YOUR-REPO
-cd YOUR-REPO</pre></div>
+    <li id="switch"><div class="step"><h2>Switch to Part 2</h2>
+      <p>In your copy of the shop, put your Part 1 changes aside, then switch branch.</p>
+      <div class="cmd"><pre>git stash -u
+git fetch
+git switch mash/part-2-new-features</pre></div>
+      <p>Rather your agent did it? Paste this in:</p>
+      <div class="cmd prose"><pre>Stash my changes, fetch, and switch this repo to the mash/part-2-new-features branch. Show me git status when you're done.</pre></div>
+      <p>Then run the setup skill once on this branch.</p>
       <div class="cmd"><pre>/setup-matt-pocock-skills</pre></div>
-      <p>Already did this at setup? You're ahead. Need more help? See the <a href="./">setup page</a>.</p>
+      <p>No copy yet, or the branch isn't there? Make one from the <a href="./">setup page</a> with <b>Include all branches</b> ticked.</p>
     </div></li>
 
     <li><div class="step"><h2>Grill: agree what to build</h2>
@@ -84,7 +88,7 @@ cd YOUR-REPO</pre></div>
     </div></li>
 
     <li><div class="step"><h2>Open a PR and review it</h2>
-      <div class="cmd prose"><pre>Run the tests and show me the output. Then open a PR into my main using the PR template, and review it against REVIEW.md.</pre></div>
+      <div class="cmd prose"><pre>Run the tests and show me the output. Then open a PR in my repo into mash/part-2-new-features using the PR template, and review it against REVIEW.md.</pre></div>
       <details class="why"><summary>What does this do?</summary><dl>
         <dt>Who writes the PR?</dt>
         <dd>The agent, using the <code>pr</code> skill: a small picture of the change, evidence that it works, and how risky it is to merge.</dd>
@@ -114,5 +118,6 @@ cd YOUR-REPO</pre></div>
 </footer>
 
 <script src="copy.js"></script>
+<script src="site-live.js"></script>
 </body>
 </html>
